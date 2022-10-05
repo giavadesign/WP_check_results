@@ -1,0 +1,75 @@
+/*==============================
+=            colori            =
+==============================*/
+$color_0: #000;
+$color_1: #B7B7B7;
+$color_2: #FFF;
+$color_3: #6aa0f1;
+$color_4: #555E55;
+$color_5: #E7E7E7;
+$color_6: #CCC;
+$color_7: #999;
+$color_8: #F5F5F5;
+$color_9: #333;
+$color_10: #111;
+$color_11: #757678;
+$color_12: #a6a6a6;
+$color_13: #f16d6d;
+$color_14: #949596;
+$color_15: #292a2b;
+$color_16: #3c3e40;
+$color_17: #737373;
+$color_18: #e6e6e6; 
+$color_19: #222222; 
+$color_20: #dadadc;
+$color_21: #6b6b6b;
+$color_22: #5d5d5d;
+$color_23: #767676;
+$color_24: #484848;
+$color_25: #F7F7F7;
+
+
+
+$color_001: #010147;
+$color_002: #cd9934;
+$color_003: #223f5f;
+$color_004: #0D2C70;
+
+
+
+/*=====  End of colori  ======*/
+
+
+
+/*===============================
+=            shadows            =
+===============================*/
+$gd_shadow_level_1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$gd_shadow_level_2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$gd_shadow_level_3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$gd_shadow_level_4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$gd_shadow_level_5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+/*=====  End of shadows  ======*/
+
+
+/*================================
+=            funzioni            =
+================================*/
+$transition_def_duration: 0.8s;
+$transition_def_ease: ease;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transitions($duration,$ease) {
+-webkit-transition: all $duration $ease;
+-moz-transition: all $duration $ease;
+-o-transition: all $duration $ease;
+transition: all $duration $ease;
+}
+/*=====  End of funzioni  ======*/
+

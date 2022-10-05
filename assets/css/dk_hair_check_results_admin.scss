@@ -1,0 +1,123 @@
+/* Plugin starter full styles */
+@import '_partials_admin.scss';
+
+
+.dk_page_title_wrapper{
+  display: block;
+  width: 100px;
+  width: calc( 100% - 20px ) ;
+  background-color: $color_2;
+  padding: 50px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  h3{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  p{
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
+
+form[name="frm_dk_hc_gender_settings"]{
+  .dropdown.bootstrap-select{
+    margin-bottom: 10px;
+  }
+
+  .dk_question_card_wrapper{
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: $gd_shadow_level_1;
+    @include transitions( $transition_def_duration , $transition_def_ease );
+
+    
+    &:hover{
+      box-shadow: $gd_shadow_level_3;
+    }
+  }
+
+  .frm_dk_question_title{
+    border-bottom: solid 1px $color_002;
+
+    span{
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: $color_002;
+      color: $color_2;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+}
+
+.dk_split_choose{
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
+
+  &_item{
+    width: 50%;
+    background-color: $color_25;
+    height: 550px;
+    padding: 50px;
+    display: table;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    @include transitions( $transition_def_duration , $transition_def_ease );
+
+    &_inner{
+      height: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+
+      a{
+        text-decoration: none;
+        color: inherit;
+        
+        
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
+      i{
+        font-size: 100px;
+        display: block;
+      }
+      
+      .dashicons, .dashicons-before:before{
+        width: auto;
+        height: auto;
+      }
+
+      span{
+        display: block;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.2;
+      }
+    }
+
+    &:hover{
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+
+}
